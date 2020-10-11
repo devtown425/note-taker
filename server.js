@@ -13,6 +13,19 @@ app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/notes.html'));
 });
 
+app.get("/api/notes", function(req, res) {
+    res.sendFile(path.join(__dirname, "/db/db.json"));
+});
+
+app.get("/api/notes/:id", function(req, res) {
+    let savedNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+    res.json(savedNotes[Number(req.params.id)]);
+});
+
+app.get("*", function(req, res) {
+    res.sendFile(path.join(mainDir, "index.html"));
+});
+
 app.post('/api/notes', (req, res) => {
     const notes = JSON.parse(fs.readFileSync(path.join(__dirname, '/db/db.json')));
     const note = req.body;
