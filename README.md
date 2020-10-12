@@ -12,6 +12,8 @@ It's a homework for using server side scripting with Express. Making a note take
     
 * [installation](#installation)
 
+* [run](#run)
+
 * [usage](#usage)
 
 * [license](#license)
@@ -27,6 +29,10 @@ It's a homework for using server side scripting with Express. Making a note take
 To install necessary dependencies, run the following command:
 
 npm install
+
+## Run 
+
+To run program, put node server.js into terminal. 
 
 ## Usage
 
