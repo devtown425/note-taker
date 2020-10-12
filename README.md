@@ -32,7 +32,9 @@ npm install
 
 ## Run 
 
-To run program, type node server.js in git bash terminal. 
+To run program, type the following in git bash terminal. 
+
+node server.js
 
 ## Usage
 
