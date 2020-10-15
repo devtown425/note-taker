@@ -7,12 +7,16 @@ license MIT
 ## Description
 It's a homework for using server side scripting with Express. Making a note taker app and hosting it on Heroku. Using JSON to emulate a database.
 
+![Note Taker](asset/Note_Taker.gif)
+
 
 ## Table of Contents 
     
 * [installation](#installation)
 
 * [run](#run)
+
+* [heroku](#heroku)
 
 * [usage](#usage)
 
@@ -35,6 +39,12 @@ npm install
 To run program, type the following in git bash terminal. 
 
 node server.js
+
+## Heroku
+
+The program is published on the following heroku link:
+
+ https://note-taker1111.herokuapp.com/
 
 ## Usage
 
